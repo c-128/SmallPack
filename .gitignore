@@ -1,0 +1,10 @@
+.minecraft/screenshots
+.minecraft/usercache.json
+.minecraft/usernamecache.json
+.minecraft/coremods
+.minecraft/crash-reports
+.minecraft/defaultconfigs
+.minecraft/logs
+.minecraft/saves
+.minecraft/.mixin.out
+natives
