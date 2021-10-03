@@ -9,3 +9,4 @@
 .minecraft/.mixin.out
 .minecraft/server-resource-packs
 natives
+.instance.cfg
