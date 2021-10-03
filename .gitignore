@@ -7,4 +7,5 @@
 .minecraft/logs
 .minecraft/saves
 .minecraft/.mixin.out
+.minecraft/server-resource-packs
 natives
