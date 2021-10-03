@@ -2,7 +2,7 @@
 
 ## About
 
-A small modpack for (SmallHat)[https://www.youtube.com/channel/UCQjriaItWtbitT7_i7y8XuQ]
+A small modpack for the YouTuber SmallHat.
 
 It does not have a lot of mods nor a questline, so it might be one of the worst modpack expierences.
 Have fun playing it anyways.
