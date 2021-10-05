@@ -1,0 +1,243 @@
+{
+	id: "38FF6925D02314D7"
+	group: ""
+	order_index: 2
+	filename: "refined_storage"
+	title: "Refined Storage"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -3.5d
+			description: [
+				"Refined Storage is a mod that allows you to store items digitally and auto-craft items and blocks."
+				""
+				"Wiki: https://tinyurl.com/wiki-refinedstorage"
+			]
+			id: "68C927D98B3D16D9"
+			tasks: [{
+				id: "1587CBAD67F5299D"
+				type: "checkmark"
+				title: "Refined Storage"
+			}]
+			rewards: [{
+				id: "01752C11CF75FC0F"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: ["Used in a lot of recipes."]
+			dependencies: ["68C927D98B3D16D9"]
+			id: "0C82381DBDFA3728"
+			tasks: [{
+				id: "0EE6C1BB5D505AFC"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+				count: 40L
+			}]
+			rewards: [{
+				id: "5F3B3DEEC1BC7EF0"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Used in a lot of recipes."]
+			dependencies: ["0C82381DBDFA3728"]
+			id: "30214FB35260051E"
+			tasks: [
+				{
+					id: "4C09662D95CA2BBC"
+					type: "item"
+					item: "refinedstorage:processor_binding"
+					count: 8L
+				}
+				{
+					id: "1DB3D45E35B6290B"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+					count: 4L
+				}
+				{
+					id: "7083525B1E67BC05"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+					count: 2L
+				}
+				{
+					id: "7AE53CBA7775AC1C"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "0FF1CCD7961AE299"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				count: 32
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: [
+				"The core of your Refined Storage network."
+				"Add blocks to the network by placing them next to the controller or by connecting them with a cable to the controller."
+			]
+			dependencies: ["30214FB35260051E"]
+			id: "6BA9111A5E883BBC"
+			tasks: [{
+				id: "3AE51750F98813F4"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [{
+				id: "73B7434CB3551623"
+				type: "item"
+				item: "refinedstorage:cable"
+				count: 12
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			description: ["Acsess your stored items."]
+			dependencies: ["6A7B76BD9573B756"]
+			id: "09DA20F9EB4D3C54"
+			tasks: [{
+				id: "5E6905B026E391E5"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+			rewards: [{
+				id: "5022438638908035"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			description: [
+				"You can insert disks into the Disk Drive."
+				"Each byte on the disk equals one item that you can store."
+			]
+			dependencies: ["6BA9111A5E883BBC"]
+			id: "6A7B76BD9573B756"
+			tasks: [
+				{
+					id: "6088272A7F674E67"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "29B87AEBFA3B2611"
+					type: "item"
+					item: "refinedstorage:1k_storage_disk"
+				}
+			]
+			rewards: [{
+				id: "51341A1E591EC9DF"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				count: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			description: ["You can now craft inside of your grid."]
+			dependencies: ["09DA20F9EB4D3C54"]
+			id: "5EC778CC948C1834"
+			tasks: [{
+				id: "200E64500D7FC84C"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+			rewards: [{
+				id: "18D1AE3648F97D5A"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.5d
+			dependencies: ["6A7B76BD9573B756"]
+			id: "40B09E1DE695A8FB"
+			tasks: [{
+				id: "2824E49B883F9288"
+				type: "item"
+				item: "refinedstorage:4k_storage_disk"
+			}]
+			rewards: [{
+				id: "5470D78540A04BD7"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				count: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			description: ["Acsess your grid wirelessly."]
+			dependencies: ["5EC778CC948C1834"]
+			id: "0138645381C97B25"
+			tasks: [
+				{
+					id: "339643578CB3FA51"
+					type: "item"
+					item: "refinedstorage:wireless_transmitter"
+				}
+				{
+					id: "4F412BA102C9E56D"
+					type: "item"
+					item: "refinedstorage:wireless_grid"
+				}
+			]
+			rewards: [{
+				id: "07694A21A990D752"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.5d
+			description: ["Now craft wirelessly."]
+			dependencies: ["0138645381C97B25"]
+			id: "21C11D7B9EE8213A"
+			tasks: [{
+				id: "7372AE9F1DF61B28"
+				type: "item"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+			rewards: [{
+				id: "4AD047736E683B1C"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.5d
+			dependencies: ["40B09E1DE695A8FB"]
+			id: "29D41C3A5DC4FA76"
+			tasks: [{
+				id: "2A4CEB8E70F27CAE"
+				type: "item"
+				item: "refinedstorage:16k_storage_disk"
+			}]
+		}
+	]
+}
