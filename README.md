@@ -3,8 +3,7 @@
 ## About
 
 A small modpack for the YouTuber SmallHat.
-
-Have fun playing it anyways.
+Have fun playing it.
 
 ## Goals
 
