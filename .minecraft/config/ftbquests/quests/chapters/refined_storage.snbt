@@ -265,5 +265,163 @@
 				count: 5
 			}]
 		}
+		{
+			x: 1.5d
+			y: 4.5d
+			description: ["Import items from a chest."]
+			dependencies: ["6A7B76BD9573B756"]
+			id: "7C0B4340E43E485B"
+			tasks: [{
+				id: "2CD4EF8D9B56CC8B"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+			rewards: [{
+				id: "4FB67255EFD12D8B"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.5d
+			description: ["Export items to a chest."]
+			dependencies: ["7C0B4340E43E485B"]
+			id: "48416D3561B341AA"
+			tasks: [{
+				id: "50C808F85AEC87C9"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+			rewards: [{
+				id: "464FC81E1A9EB004"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.5d
+			description: [
+				"Used to store items outside of disk."
+				"Attach it to an external storage (such as an chest or Storage Drawer) and it will automatically store the items in the storage block."
+			]
+			dependencies: ["48416D3561B341AA"]
+			id: "56182AB015FFA34B"
+			tasks: [{
+				id: "3179D3DFBF240550"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+			rewards: [{
+				id: "4A71C964231B090E"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+				count: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.5d
+			description: ["Has a bigger filter than the normal Exporter."]
+			dependencies: ["48416D3561B341AA"]
+			id: "17B14F8D85C3AEB2"
+			tasks: [{
+				id: "301C284A9F844D2B"
+				type: "item"
+				item: "extrastorage:advanced_exporter"
+			}]
+			rewards: [{
+				id: "34D363982F3D7C90"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			description: ["Has a bigger filter than the normal Importer."]
+			dependencies: ["7C0B4340E43E485B"]
+			id: "064477F3C03E327D"
+			tasks: [{
+				id: "799815954933DCF6"
+				type: "item"
+				item: "extrastorage:advanced_importer"
+			}]
+			rewards: [{
+				id: "022DFE14879F9596"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			subtitle: "The age of automated crafting!"
+			description: [
+				"Insert patterns created in the pattern terminal."
+				"If you make the Crafter point into a machine, it will put the items into the machine. You will need to import the items with an Importer."
+			]
+			dependencies: ["02F16EFB8D751073"]
+			id: "40AF48F3DFD871EC"
+			tasks: [{
+				id: "11E19BF4ABC327D9"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+			rewards: [{
+				id: "67A087CA9B518644"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			description: [
+				"Used to store reciepes."
+				"Create them in the Pattern Grid."
+			]
+			dependencies: ["6BA9111A5E883BBC"]
+			id: "02F16EFB8D751073"
+			tasks: [
+				{
+					id: "6246F9A11E205FC8"
+					type: "item"
+					item: "refinedstorage:pattern"
+					count: 5L
+				}
+				{
+					id: "13152547A4AB423A"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+			]
+			rewards: [{
+				id: "63E4A8E4A6337FA0"
+				type: "item"
+				item: "refinedstorage:pattern"
+				count: 5
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.5d
+			description: ["Like the Crafter, but can store more patterns and is faster."]
+			dependencies: ["40AF48F3DFD871EC"]
+			id: "071AD8779EAF2245"
+			tasks: [{
+				id: "6F9E764FE0BB1BAC"
+				type: "item"
+				item: "extrastorage:iron_crafter"
+			}]
+			rewards: [{
+				id: "47F8842220379F7E"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+			}]
+		}
 	]
 }
