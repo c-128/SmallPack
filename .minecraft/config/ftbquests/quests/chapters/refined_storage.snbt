@@ -173,6 +173,7 @@
 		{
 			x: -0.5d
 			y: 6.5d
+			description: ["Stores more items digitally."]
 			dependencies: ["6A7B76BD9573B756"]
 			id: "40B09E1DE695A8FB"
 			tasks: [{
@@ -231,12 +232,37 @@
 		{
 			x: -0.5d
 			y: 8.5d
+			description: ["Stores even more items digitally."]
 			dependencies: ["40B09E1DE695A8FB"]
 			id: "29D41C3A5DC4FA76"
 			tasks: [{
 				id: "2A4CEB8E70F27CAE"
 				type: "item"
 				item: "refinedstorage:16k_storage_disk"
+			}]
+			rewards: [{
+				id: "78056A9EA0718050"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				count: 5
+			}]
+		}
+		{
+			x: -0.5d
+			y: 10.5d
+			description: ["Stores the most items digitally."]
+			dependencies: ["29D41C3A5DC4FA76"]
+			id: "290F1E13AE2BA023"
+			tasks: [{
+				id: "5A43D4921BBD4B2C"
+				type: "item"
+				item: "refinedstorage:64k_storage_disk"
+			}]
+			rewards: [{
+				id: "2EEB24804176642A"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				count: 5
 			}]
 		}
 	]
