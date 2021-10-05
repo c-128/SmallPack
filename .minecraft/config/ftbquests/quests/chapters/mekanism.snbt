@@ -1,0 +1,522 @@
+{
+	id: "7466450A3EE5FE2C"
+	group: ""
+	order_index: 1
+	filename: "mekanism"
+	title: "Mekanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Mekanism is a mod that offers early, mid and late game content"
+				""
+				"Wiki: https://tinyurl.com/wiki-mekanism"
+			]
+			dependency_requirement: "one_completed"
+			id: "6076C0DEF9A4652C"
+			tasks: [{
+				id: "3ED6CF5CCD71D185"
+				type: "checkmark"
+				title: "Mekanism"
+			}]
+			rewards: [{
+				id: "7C7DD4AE2B32F4D3"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Basic Mekanism Ores"
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["6076C0DEF9A4652C"]
+			id: "600FF1655946FAC8"
+			tasks: [
+				{
+					id: "0634108C8F836152"
+					type: "item"
+					item: "mekanism:ingot_osmium"
+					count: 16L
+				}
+				{
+					id: "6E3507CA30C6F0B9"
+					type: "item"
+					item: "mekanism:ingot_copper"
+					count: 16L
+				}
+				{
+					id: "3A9095979D15FEC9"
+					type: "item"
+					item: "mekanism:ingot_uranium"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "7D659CCBE17A0645"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 8
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Generates little power from burnable resources."
+				"Outputs power at its back."
+			]
+			dependencies: ["600FF1655946FAC8"]
+			id: "19A7D36121FE82E3"
+			tasks: [{
+				id: "6FF9BAD969963A13"
+				type: "item"
+				item: "mekanismgenerators:heat_generator"
+			}]
+			rewards: [{
+				id: "70DCD500C60F1CB2"
+				type: "item"
+				item: "minecraft:coal"
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Used to infuse metals."
+				"Use JEI for the recipes."
+			]
+			dependencies: ["19A7D36121FE82E3"]
+			id: "4D9D5097EF8D87B1"
+			tasks: [{
+				id: "6DE9A787358F4A61"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [
+				{
+					id: "74A1EF3D3E85BDE3"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 4
+				}
+				{
+					id: "420F48256757E0C5"
+					type: "item"
+					item: "minecraft:coal"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			description: ["Used to craft solar panels."]
+			dependencies: ["19A7D36121FE82E3"]
+			id: "7E475C0567B7D6C9"
+			tasks: [{
+				id: "7F1CE9FBEE1E64C1"
+				type: "item"
+				item: "mekanismgenerators:solar_panel"
+				count: 3L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"Generates little power from the sun."
+				"Only works during daytime."
+			]
+			dependencies: ["7E475C0567B7D6C9"]
+			id: "076C5F5701320D9D"
+			tasks: [{
+				id: "4C5AF2FC494F6238"
+				type: "item"
+				item: "mekanismgenerators:solar_generator"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"Created in the Metallurgic Infuser with Iron and Coal."
+				"Used to create steel."
+			]
+			dependencies: ["4D9D5097EF8D87B1"]
+			id: "53CFB65A47402801"
+			tasks: [{
+				id: "06AB9B2E949355FF"
+				type: "item"
+				item: "mekanism:enriched_iron"
+				count: 5L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			subtitle: "You will need a lot of it..."
+			description: ["Created in the Metallurgic Infuser with coal and then smelted."]
+			dependencies: ["53CFB65A47402801"]
+			id: "7D2AA8FA6C6EF622"
+			tasks: [{
+				id: "2E1F546CE881F90A"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 5L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 10.0d
+			description: ["Used to transport power."]
+			dependencies: ["7D2AA8FA6C6EF622"]
+			id: "56C5F6DF359E8D68"
+			tasks: [{
+				id: "3FE612A967460A22"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+				count: 8L
+			}]
+		}
+		{
+			title: "Basic Machine Items"
+			x: 0.0d
+			y: 12.0d
+			description: ["Used to craft machines."]
+			dependencies: ["7D2AA8FA6C6EF622"]
+			id: "74A150EACEDC912C"
+			tasks: [
+				{
+					id: "00C4A001A1230C18"
+					type: "item"
+					item: "mekanism:alloy_infused"
+					count: 4L
+				}
+				{
+					id: "7F3BF7575339EF24"
+					type: "item"
+					item: "mekanism:steel_casing"
+				}
+			]
+			rewards: [{
+				id: "12F46D257C7D5F89"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: 14.0d
+			description: ["Uses power to smelt items."]
+			dependencies: ["74A150EACEDC912C"]
+			id: "11E03B8AE19DB7A5"
+			tasks: [{
+				id: "325F10DB48430F3E"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+			rewards: [{
+				id: "0C53EF7A99024997"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 14.0d
+			description: [
+				"Used to enrich resources."
+				"You can use the enriched resources in the Metallurgic Infuser to get more bang for your buck."
+				"Can also used to get 2 Ingots from 1 Ore."
+			]
+			dependencies: ["11E03B8AE19DB7A5"]
+			id: "36786FF5D64E11E9"
+			tasks: [{
+				id: "0E69FEEE06A25EF3"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+			rewards: [
+				{
+					id: "73C4869B77EE48A0"
+					type: "item"
+					item: "mekanism:enriched_carbon"
+					count: 2
+				}
+				{
+					id: "106E082FD0BF6D09"
+					type: "item"
+					item: "mekanism:enriched_redstone"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 14.0d
+			description: [
+				"Used to upgrade machines into factories."
+				"Factories can process multiple items at once but uses more power."
+			]
+			dependencies: ["11E03B8AE19DB7A5"]
+			id: "56910BEACF314C09"
+			tasks: [{
+				id: "06A06608DB9575DB"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+			rewards: [{
+				id: "15704FF37181AA1D"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 16.0d
+			description: ["Used to create dusts from Ingots."]
+			dependencies: ["11E03B8AE19DB7A5"]
+			id: "1122F239728AB799"
+			tasks: [{
+				id: "0152FA391C598557"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+			rewards: [{
+				id: "7D9DFCDD302027E7"
+				type: "item"
+				item: "mekanism:dust_diamond"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 16.0d
+			description: [
+				"An upgrade used to decrease power use."
+				"Can be applied inside the GUI or by shift-right clicking on the machine."
+			]
+			dependencies: ["1122F239728AB799"]
+			id: "2D40E843D62BED06"
+			tasks: [{
+				id: "276B1238084ADA24"
+				type: "item"
+				item: "mekanism:upgrade_energy"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 18.0d
+			description: ["Speeds up machines, but makes them consume A LOT more power."]
+			dependencies: ["2D40E843D62BED06"]
+			id: "59116BB2716C6E00"
+			tasks: [{
+				id: "215E6CB7DCDBBE7D"
+				type: "item"
+				item: "mekanism:upgrade_speed"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 16.0d
+			dependencies: ["56910BEACF314C09"]
+			id: "60450BA3A87421B4"
+			tasks: [{
+				id: "35198BA02960903F"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+			rewards: [{
+				id: "3DC82BD099052C85"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 2
+			}]
+		}
+		{
+			x: -2.0d
+			y: 18.0d
+			description: ["A more advanced version of the infused alloy."]
+			dependencies: ["79A3176D6F7DD9D7"]
+			id: "611A49C1B8EC7510"
+			tasks: [{
+				id: "2B4FED11E00D7BF6"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 20.0d
+			description: ["The ultimate alloy."]
+			dependencies: ["611A49C1B8EC7510"]
+			id: "783979DE09E56012"
+			tasks: [{
+				id: "022D34B9ABF83B05"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 18.0d
+			description: ["Used to create refined obsidian."]
+			dependencies: ["1122F239728AB799"]
+			id: "07D9CCBBFB9BE175"
+			tasks: [{
+				id: "09E28F6C8166EFE3"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 20.0d
+			description: ["One of the thoughest ingots."]
+			dependencies: ["07D9CCBBFB9BE175"]
+			id: "48B9FCAAB6E1CEDB"
+			tasks: [{
+				id: "751BA4FD13B77378"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 20.0d
+			description: ["One of the best tools. Can be used as a pickaxe, axe and shovel."]
+			dependencies: ["48B9FCAAB6E1CEDB"]
+			id: "38073555AFF4EAA8"
+			tasks: [{
+				id: "723FA6FF376D42EC"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 22.0d
+			description: ["A little robot that follows you."]
+			dependencies: ["783979DE09E56012"]
+			id: "63F43C7B03B9F288"
+			tasks: [{
+				id: "237DFC6156DCAFBB"
+				type: "item"
+				item: "mekanism:robit"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 24.0d
+			description: [
+				"Automatically digs ores for you."
+				"Uses a lot of power."
+			]
+			dependencies: ["63F43C7B03B9F288"]
+			id: "74E9C56D2F6A3D61"
+			tasks: [{
+				id: "5789F5AF3CFAB19B"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.0d
+			description: [
+				"Generates power from the sun."
+				"Only works during daytime."
+			]
+			dependencies: ["076C5F5701320D9D"]
+			id: "08CAE5D160197A81"
+			tasks: [{
+				id: "539D33499DDE2368"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 18.0d
+			dependencies: [
+				"60450BA3A87421B4"
+				"611A49C1B8EC7510"
+			]
+			id: "718360A3D2E7E736"
+			tasks: [{
+				id: "333D3813AED36BB4"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+			rewards: [{
+				id: "7D22AE8A7DC84437"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				count: 2
+			}]
+		}
+		{
+			x: -4.0d
+			y: 20.0d
+			description: ["The ultimate and final factory tier."]
+			dependencies: [
+				"783979DE09E56012"
+				"718360A3D2E7E736"
+			]
+			id: "3BC858DAF5BD3780"
+			tasks: [{
+				id: "1D0AE185AF185A76"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+			rewards: [{
+				id: "368F6667003A2F34"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 22.0d
+			description: ["Porbably the best tool."]
+			dependencies: ["38073555AFF4EAA8"]
+			id: "6B47C4C12E3DDC78"
+			tasks: [{
+				id: "34A63A529081F124"
+				type: "item"
+				item: {
+					id: "mekanism:meka_tool"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 16.0d
+			description: ["The most basic alloy"]
+			dependencies: ["1122F239728AB799"]
+			id: "79A3176D6F7DD9D7"
+			tasks: [{
+				id: "7559DA3E99EA16AE"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+	]
+}

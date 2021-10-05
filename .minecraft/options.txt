@@ -106,8 +106,8 @@ key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
 key_key.waila.show_recipe_input:key.keyboard.keypad.3
 key_key.waila.show_recipe_output:key.keyboard.keypad.4
-key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.mekanism.mode:key.keyboard.n
+key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.mekanism.head_mode:key.keyboard.v
 key_key.mekanism.chest_mode:key.keyboard.g
 key_key.mekanism.legs_mode:key.keyboard.j
@@ -117,6 +117,7 @@ key_key.mekanism.description:key.keyboard.n:SHIFT
 key_key.mekanism.module_tweaker:key.keyboard.backslash
 key_key.mekanism.key_boost:key.keyboard.left.control
 key_key.mekanism.key_hud:key.keyboard.h
+key_key.ftbquests.quests:key.keyboard.unknown
 key_placebo.toggleTrails:key.keyboard.keypad.9
 key_key.cofh.mode_change_increment:key.keyboard.v
 key_key.refinedstorage.focusSearchBar:key.keyboard.tab

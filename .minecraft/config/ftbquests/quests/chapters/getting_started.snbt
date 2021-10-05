@@ -1,0 +1,26 @@
+{
+	id: "3FA60BA92793ED6D"
+	group: ""
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 1.0d
+		y: -0.5d
+		subtitle: "This is a modpack for the YouTuber SmallHat made by NullPointerException. Have fun playing it."
+		id: "0DCFCF5E6115E91D"
+		tasks: [{
+			id: "3499061A66AEC46D"
+			type: "checkmark"
+			title: "Welcome to SmallPack!"
+		}]
+		rewards: [{
+			id: "41E33DD705300867"
+			type: "item"
+			item: "minecraft:bread"
+			count: 32
+		}]
+	}]
+}
