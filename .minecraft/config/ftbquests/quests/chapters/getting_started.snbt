@@ -6,21 +6,131 @@
 	title: "Getting Started"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 1.0d
-		y: -0.5d
-		subtitle: "This is a modpack for the YouTuber SmallHat made by NullPointerException. Have fun playing it."
-		id: "0DCFCF5E6115E91D"
-		tasks: [{
-			id: "3499061A66AEC46D"
-			type: "checkmark"
-			title: "Welcome to SmallPack!"
-		}]
-		rewards: [{
-			id: "41E33DD705300867"
-			type: "item"
-			item: "minecraft:bread"
-			count: 32
-		}]
-	}]
+	quests: [
+		{
+			icon: "kubejs:smallhat"
+			x: 1.0d
+			y: -0.5d
+			description: [
+				"This is a modpack for the YouTuber SmallHat made by NullPointerException."
+				"Have fun playing it."
+			]
+			id: "0DCFCF5E6115E91D"
+			tasks: [{
+				id: "3499061A66AEC46D"
+				type: "checkmark"
+				title: "Welcome to SmallPack!"
+			}]
+			rewards: [
+				{
+					id: "41E33DD705300867"
+					type: "item"
+					item: "minecraft:bread"
+					count: 64
+				}
+				{
+					id: "7B1FE860FE16CCA1"
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 2
+				}
+				{
+					id: "158309EC3C3782FD"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4AAAA55790F1A7BA"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "557EB6F4614CD508"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D4C048431E89A49"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D81857B1F22794A"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 8
+				}
+				{
+					id: "7D9773418F4DDCB3"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "57192E2F7A04649E"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "refinedstorage:controller"
+			x: 1.0d
+			y: -3.5d
+			dependencies: ["0DCFCF5E6115E91D"]
+			id: "1AC9F119FFA3E9DF"
+			tasks: [{
+				id: "44A2ECE97C5D5CC6"
+				type: "checkmark"
+				title: "Mekanism"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			dependencies: ["0DCFCF5E6115E91D"]
+			id: "78D476A83B9E2231"
+			tasks: [{
+				id: "582F4DF3F2BFB3ED"
+				type: "checkmark"
+				title: "Refined Storage"
+				icon: "mekanism:alloy_atomic"
+			}]
+		}
+	]
 }

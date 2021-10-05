@@ -125,6 +125,7 @@
 			}]
 		}
 		{
+			title: "Storage"
 			x: -0.5d
 			y: 4.5d
 			description: [
@@ -189,6 +190,7 @@
 			}]
 		}
 		{
+			title: "Wireless storage acsess"
 			x: -3.0d
 			y: 8.5d
 			description: ["Acsess your grid wirelessly."]
@@ -378,6 +380,7 @@
 			}]
 		}
 		{
+			title: "Autocrafting"
 			x: 5.5d
 			y: 2.5d
 			description: [
