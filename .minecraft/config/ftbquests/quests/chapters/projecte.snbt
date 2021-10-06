@@ -1,0 +1,90 @@
+{
+	id: "0202E172A01ADD1A"
+	group: ""
+	order_index: 3
+	filename: "projecte"
+	title: "ProjectE"
+	icon: {
+		id: "projecte:philosophers_stone"
+		Count: 1b
+		tag: { }
+		ForgeCaps: {
+			Parent: { }
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -1.0d
+			description: [
+				"ProjectE is a mod that is used to transmute items into other items."
+				""
+				"Wiki: https://tinyurl.com/wiki-projecte"
+			]
+			id: "73241C52ACA90002"
+			tasks: [{
+				id: "02D0F7A99E9ADED1"
+				type: "checkmark"
+				title: "ProjectE"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["73241C52ACA90002"]
+			id: "1C0FF5E0E0015A62"
+			tasks: [{
+				id: "32C8A0F783740541"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "78E5A1F2FC77FD59"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			description: [
+				"Right click to open a GUI where you can insert items and take items out of it."
+				"Most of the items have an EMC value. If you insert an item, the EMC counter will go up by the amount of EMC of the item."
+				"If you take out one item, the EMC ounter will go down by the amount of EMC that the item has."
+			]
+			dependencies: ["1C0FF5E0E0015A62"]
+			id: "3728D90864F97BB6"
+			tasks: [{
+				id: "04C1AD8C46CD6FE2"
+				type: "item"
+				item: "projecte:transmutation_table"
+			}]
+			rewards: [{
+				id: "5BF509A79952B0CF"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			description: ["Transmutation on the go!"]
+			dependencies: ["3728D90864F97BB6"]
+			id: "5249F1FD22B5DFA2"
+			tasks: [{
+				id: "4D86CB0DDB61D23C"
+				type: "item"
+				item: "projecte:transmutation_tablet"
+			}]
+		}
+	]
+}

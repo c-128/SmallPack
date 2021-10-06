@@ -1,0 +1,26 @@
+{
+	id: "775590E173E2F5DC"
+	group: ""
+	order_index: 4
+	filename: "mystical_agricultur_2"
+	title: "Mystical Agriculture"
+	icon: "mysticalagriculture:prosperity_seed_base"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Mystical Agriculture"
+		x: 0.5d
+		y: -0.5d
+		description: [
+			"Mystical Agriculture is a mod that is used to grow resources."
+			""
+			"Wiki: https://tinyurl.com/wiki-mystical-agriculture"
+		]
+		id: "6BD9BC8C13788779"
+		tasks: [{
+			id: "3969A55B04F48E6C"
+			type: "checkmark"
+			title: "Mystical Agriculu"
+		}]
+	}]
+}

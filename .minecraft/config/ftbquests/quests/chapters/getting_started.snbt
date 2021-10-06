@@ -4,11 +4,12 @@
 	order_index: 0
 	filename: "getting_started"
 	title: "Getting Started"
+	icon: "ftbquests:book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			icon: "kubejs:smallhat"
+			icon: "ftbquests:book"
 			x: 1.0d
 			y: -0.5d
 			description: [
@@ -109,9 +110,11 @@
 			]
 		}
 		{
+			title: "Refined Storage"
 			icon: "refinedstorage:controller"
 			x: 1.0d
 			y: -3.5d
+			description: ["Refined Storage is a mod that allows you to store items digitally and auto-craft items and blocks."]
 			dependencies: ["0DCFCF5E6115E91D"]
 			id: "1AC9F119FFA3E9DF"
 			tasks: [{
@@ -121,8 +124,10 @@
 			}]
 		}
 		{
+			title: "Mekanism"
 			x: 1.0d
 			y: 2.5d
+			description: ["Mekanism is a mod that offers early, mid and late game content"]
 			dependencies: ["0DCFCF5E6115E91D"]
 			id: "78D476A83B9E2231"
 			tasks: [{
@@ -130,6 +135,36 @@
 				type: "checkmark"
 				title: "Refined Storage"
 				icon: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			icon: {
+				id: "projecte:philosophers_stone"
+				Count: 1b
+				tag: { }
+				ForgeCaps: {
+					Parent: { }
+				}
+			}
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["0DCFCF5E6115E91D"]
+			id: "5DFD9AB69FE4364D"
+			tasks: [{
+				id: "26B0795CA60EB750"
+				type: "checkmark"
+				title: "ProjectE"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["0DCFCF5E6115E91D"]
+			id: "4BB0D0F2049D9E3B"
+			tasks: [{
+				id: "592CC11BC358E448"
+				type: "item"
+				item: "mysticalagriculture:prosperity_seed_base"
 			}]
 		}
 	]
