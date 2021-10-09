@@ -2,7 +2,7 @@
 
 ## About
 
-A small modpack for the YouTuber SmallHat.
+A small modpack for the YouTuber [SmallHat](https://www.youtube.com/channel/UCQjriaItWtbitT7_i7y8XuQ).
 Have fun playing it.
 
 ## Goals
