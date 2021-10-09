@@ -1,0 +1,134 @@
+{
+	id: "4E77C6ADF66FDEC5"
+	group: ""
+	order_index: 4
+	filename: "scannable"
+	title: "Scannable"
+	icon: "scannable:scanner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "scannable:scanner"
+			x: 0.0d
+			y: -1.0d
+			description: ["Scannable is a mod that allows you to scan for ores."]
+			id: "643C5918CBFC3002"
+			tasks: [{
+				id: "1818BBC491AA3590"
+				type: "checkmark"
+				title: "Scannable"
+			}]
+			rewards: [{
+				id: "4EE4291EC0B41ACE"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Scanner is an item that allows you to search for ores. Requires power."
+				""
+				""
+				"Requires at least one Scanner Module for ore."
+			]
+			dependencies: ["643C5918CBFC3002"]
+			id: "7365D8B64CCAEFB6"
+			tasks: [{
+				id: "6863391FDA8F97BB"
+				type: "item"
+				item: "scannable:scanner"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["7365D8B64CCAEFB6"]
+			id: "14474FCC976FF9AB"
+			tasks: [{
+				id: "0D4ED61F21FD43AE"
+				type: "item"
+				item: "scannable:module_range"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["7365D8B64CCAEFB6"]
+			id: "13535A4F814C2196"
+			tasks: [{
+				id: "417634F96D4D77C2"
+				type: "item"
+				item: "scannable:module_entity"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			dependencies: ["13535A4F814C2196"]
+			id: "307E6838F3A88CD7"
+			tasks: [{
+				id: "6FD03C9B673960EA"
+				type: "item"
+				item: "scannable:module_animal"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 7.0d
+			dependencies: ["307E6838F3A88CD7"]
+			id: "250474203FDC9365"
+			tasks: [{
+				id: "05583603859C7C96"
+				type: "item"
+				item: "scannable:module_monster"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["7365D8B64CCAEFB6"]
+			id: "502358164E8A8119"
+			tasks: [{
+				id: "394B001635A6309B"
+				type: "item"
+				item: "scannable:module_block"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["7365D8B64CCAEFB6"]
+			id: "554F80166E510D79"
+			tasks: [{
+				id: "527E8D2CE5650878"
+				type: "item"
+				item: "scannable:module_ore_common"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			dependencies: ["554F80166E510D79"]
+			id: "1284AFAA3B692351"
+			tasks: [{
+				id: "16581A2E92053DF1"
+				type: "item"
+				item: "scannable:module_ore_rare"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["502358164E8A8119"]
+			id: "245BFFF8E58BB378"
+			tasks: [{
+				id: "0699AB8077DA34EC"
+				type: "item"
+				item: "scannable:module_fluid"
+			}]
+		}
+	]
+}

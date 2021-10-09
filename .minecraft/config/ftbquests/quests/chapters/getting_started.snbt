@@ -148,6 +148,7 @@
 			}
 			x: 4.0d
 			y: -0.5d
+			description: ["ProjectE is a mod that is used to transmute items into other items."]
 			dependencies: ["0DCFCF5E6115E91D"]
 			id: "5DFD9AB69FE4364D"
 			tasks: [{
@@ -157,14 +158,16 @@
 			}]
 		}
 		{
+			icon: "scannable:scanner"
 			x: -2.0d
 			y: -0.5d
+			description: ["Scannable is a mod that allows you to scan for ores."]
 			dependencies: ["0DCFCF5E6115E91D"]
-			id: "4BB0D0F2049D9E3B"
+			id: "0B57E44199035D86"
 			tasks: [{
-				id: "592CC11BC358E448"
-				type: "item"
-				item: "mysticalagriculture:prosperity_seed_base"
+				id: "518A92FA0F60D380"
+				type: "checkmark"
+				title: "Scanner"
 			}]
 		}
 	]
